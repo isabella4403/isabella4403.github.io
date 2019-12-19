@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: powderblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 25%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: skyblue;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.right {
+  background-color:skyblue;
+  float:right;
+  width:25%;
+  padding:20px;
+  margin-top:0px;
+  text-align: right;
+  height: 600px;
+}
+
+.under {
+  background-color:#e5e5e5;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>TIPS OG TRICKS</h2>
+</header>
+
+<div class="right">
+  <img src="abe.jpg" alt="Frugt" style="width:147px;height:147px;"> <img src="jason.jpg" alt="Frugt" style="width:147px;height:147px;">
+  <br>
+  <img src="frugti.jpg" alt="Vandfald" style="width:300px;height:187px;">
+  <br>
+  <img src="gynge.jpg" alt="Homestay" style="width:300px;height:187px;">
+</div>
+
+
+<section>
+  <nav>
+    <ul>
+      <img src="venner.jpg" alt="Venner" style="width:300px;height:187px;">
+      <br>
+      <img src="jungle.jpg" alt="Jungle" style="width:300px;height:187px;">
+      <br>
+      <img src="gade.jpg" alt="Gade" style="width:300px;height:187px;">
+    </ul>
+  </nav>
+
+  <article>
+    <h2 style="font-family:courier;">Indonesien!</h2>
+    <p style="font-family:courier;">
+      Hvis I har nogen som helst mulighed for det, så lok jeres <br> <br>
+      lærere med til Indonesien! Vi havde en dag, hvor vi tog en <br> <br>
+      færge til Indonesien, for bare at dase ved vandet og poolen <br> <br>
+      hele dagen og nyde varmen. Det er virkelig et rart afbræk <br> <br>
+      fra Singapores højhuse og byliv.<br> <br> <br> <br>
+      </p>
+
+      <h2 style="font-family:courier;">Zoo!</h2>
+      <p style="font-family:courier;">
+        Stiller jeres lærere jer spørgsmålet om I skal tage i <br> <br>
+        Singapore Zoo eller ej, skal jeres svar være et højt og <br> <br>
+        rungende JA. Det er vildt fedt. Man går rundt "i junglen" <br> <br>
+        og frie aber hopper rundt omkring en. Det er meget naturligt. <br> <br>
+        </p>
+  </article>
+</section>
+
+
+<div class="under">
+  <p1 style="font-family:courier;">
+  Kom tilbage til en af de andre sider her: <br>
+  </p1>
+
+  <p style="text-align:center;font-family:courier;">
+  <a href="pakkeliste.html"> Pakkeliste </a>
+
+  <a href="index.html"> Singapore </a>
+
+  <a href="homestay.html"> Homestay </a>
+
+  <a href="gcpvideo.html"> GCP-video </a>
+  <p/>
+</div>
+
+</body>
+</html>

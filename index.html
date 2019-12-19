@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: powderblue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 25%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: skyblue;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 10px;
+  width: 45%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.right {
+  background-color:skyblue;
+  float:right;
+  width:30%;
+  padding:15px;
+  margin-top:0px;
+  text-align:center;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>SINGAPORE</h2>
+</header>
+
+<div class="right">
+  <img src="frugt.jpg" alt="Frugt" style="width:300px;height:187px;">
+  <br>
+  <img src="changi.jpg" alt="Vandfald" style="width:300px;height:187px;">
+  <br>
+  <img src="hus.jpg" alt="Homestay" style="width:300px;height:187px;">
+</div>
+</div>
+
+<section>
+  <nav>
+    <ul>
+      <h3 style="font-size:145%;text-align:center;font-family:courier;">Hvad kan i finde her?</h3>
+      <p style="font-family:courier;text-align:center;">
+      På denne hjemmeside vil I kunne <br> <br> finde alt den nødvendige viden:
+      <p/>
+
+      <p style="text-align:center;font-family:courier;">
+      <a href="pakkeliste.html"> Pakkeliste </a>
+      <p/>
+
+      <p style="text-align:center;font-family:courier;">
+      <a href="homestay.html"> Homestay </a>
+      <p/>
+
+      <p style="text-align:center;font-family:courier;">
+      <a href="tipsogtricks.html"> Tips og tricks </a>
+      <p/>
+
+      <p style="text-align:center;font-family:courier;">
+      <a href="gcpvideo.html"> GCP video </a>
+      <p/>
+    </ul>
+  </nav>
+
+  <article>
+    <h2 style="font-family:courier;">Singapore som GCP-destination</h2>
+    <p style="font-family:courier;">
+    Kære t'ere. Nu er jeres tid snart kommet. Snart skal i ud i den <br> <br>
+    store vide verden og opleve Singapore på første hånd. Og I kan <br> <br>
+    godt glæde jer! Os gamle og livserfarne 3t'ere har på denne <br> <br>
+    hjemmeside samlet alt hvad i skal vide før i drager mod det <br> <br>
+    forunderlige land.
+    <br> <br> <br>
+    Om Singapore som GCP destination kan det siges, at det er en  <br> <br>
+    mega fed destination. Lige fra når i træder ud af Changi <br> <br>
+    Airport, vil i blive mødt af, først og fremmest en svedende <br> <br>
+    varme, men også en masse forskellige kulturindtryk. Hvis I <br> <br>
+    kigger ud af vinduerne på metroen som vil fragte jer fra <br> <br>
+    lufthavnen til hostellet, vil i kunne opleve hvordan både den <br> <br>
+    kinesiske, indiske og indonesiske kultur pryder Singapores <br> <br>
+    sbybillede.
+    <br> <br>
+    </p>
+  </article>
+</section>
+
+
+<footer>
+  <p>Lavet af Isabella</p>
+</footer>
+
+</body>
+</html>
